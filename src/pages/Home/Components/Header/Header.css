@@ -1,0 +1,32 @@
+.bg{
+    background-image: url("../../../../shared/assests/images/header.jpg") ;
+    height: 100vh  ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 91, 75, 0.501961);
+    z-index: 999;
+}
+.contant{
+    padding: 13rem 4rem;
+}
+.title{
+    color:#D3A355;
+    font-size: 3.5rem;
+}
+.text{
+    width: 53%;
+    font-size: 3rem;
+    color: #fff;
+    padding-right: 1rem;
+}

@@ -1,0 +1,23 @@
+.about-contant{
+    padding: 5rem 0;
+}
+.description{
+    /* width: 80%; */
+    font-size: 1.3rem;
+    /* padding-top: 2rem; */
+    /* text-align: center; */
+    /* padding: 3rem 5rem; */
+}
+.button{
+    text-align: center;
+}
+ .btn-lg {
+    padding: 0 2rem;
+   border-radius: .3rem;
+}
+.btn-green{
+    background-color: #005B4B !important;
+    border-color :  #005B4B;
+    color: white !important;
+    padding: .8rem  2rem !important; 
+}

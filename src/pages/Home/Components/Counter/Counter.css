@@ -1,0 +1,12 @@
+.counter-image{
+    background-image: url("../../../../shared/assests/images/counter-image.jpg");
+    height: 85vh  ;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.counter-items{
+    border: 2px solid #D3A355;
+}

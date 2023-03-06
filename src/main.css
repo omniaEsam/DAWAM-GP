@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    
+}
