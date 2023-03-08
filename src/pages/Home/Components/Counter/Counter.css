@@ -9,4 +9,8 @@
 }
 .counter-items{
     border: 2px solid #D3A355;
+    border-radius: 10px;
+}
+.count-num{
+    color:#D3A355
 }

@@ -1,0 +1,26 @@
+.search-head{
+    position: relative;
+}
+.search-icon{
+    position: absolute;
+    top: 6.5rem;
+    left: 23rem;
+    color: #005B4B;
+}
+
+.title{
+    color:#005B4B;
+    font-weight: 400;
+}
+.card-boder{
+    border: 1px solid  #e9ecef;
+    padding:0 1rem 2rem 1rem;
+    
+}
+.search-cards img{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.desc-serch{
+    text-align: justify;
+}

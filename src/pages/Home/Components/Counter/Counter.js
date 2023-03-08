@@ -10,11 +10,25 @@ export default function Counter() {
     <div className='overlay py-5 d-flex justify-content-center align-items-center'>
       <div className = "container">
         <div className='row'>
-            <div className='col-4'>
-           <div className='text-center counter-items py-5'>
-           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-5' />
-           <p>7000+</p>
-           <p className='text-white'>عددالأوقاف في العالم</p>
+            <div className='col-md-4'>
+           <div className='text-center counter-items  py-3'>
+           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-2' />
+           <p className='py-2 fs-2 count-num'>7000+</p>
+           <p className='text-white fs-3 '>عددالأوقاف في العالم</p>
+           </div>
+            </div>
+            <div className='col-md-4'>
+           <div className='text-center counter-items  py-3'>
+           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-2' />
+           <p className='py-2 fs-2 count-num'>7000+</p>
+           <p className='text-white fs-3 '>عددالأوقاف في العالم</p>
+           </div>
+            </div>
+            <div className='col-md-4'>
+           <div className='text-center counter-items  py-3'>
+           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-2' />
+           <p className='py-2 fs-2 count-num'>7000+</p>
+           <p className='text-white fs-3 '>عددالأوقاف في العالم</p>
            </div>
             </div>
         </div>

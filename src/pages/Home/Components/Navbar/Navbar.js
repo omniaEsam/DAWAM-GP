@@ -21,7 +21,7 @@ export default function Navbar() {
       return(
         <li className="nav-item" key={index}>
         <Link  className="nav-link " aria-current="page" 
-        style={{color:route.pathname===item.navLink ? "#D3A355" : "white" , borderBottom:route.pathname===item.navLink ? `2px solid #D3A355` : ""}}
+        style={{color:route.pathname===item.navLink ? "#D3A355" : "white" , borderBottom:route.pathname===item.navLink ? `2px solid white` : ""}}
          to={item.navLink}>{item.navText}</Link>
         </li>
       )
