@@ -24,6 +24,11 @@ function links(){
             navLink: "/contact" ,
             navText: "تواصل معنا"
         }
+        ,
+        {
+            navLink: "/Log_in" ,
+            navText: " تسجيل الدخول"
+        }
     ]
 }
 export default links;

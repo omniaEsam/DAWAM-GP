@@ -20,7 +20,7 @@ export default function About() {
               وغيره
             </p>
             <div className='button'>
-            <Link className="btn  btn-lg btn-green " to="#" role="button">المزيد</Link>
+            <Link className="btn  btn-lg btn-green " to="/About" role="button">المزيد</Link>
             </div>
             </div>
       </div>
