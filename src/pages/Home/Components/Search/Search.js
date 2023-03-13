@@ -19,7 +19,9 @@ export default function Search() {
               return(
                 <div className='col-md-3' key={item.id}>
                 <div className='search-cards '>
-                  <img src={item.image} className='w-100' alt=""/>
+                  {/* <div className='h-50'> */}
+                  <img src={item.image} className='w-100 ' alt=""/>
+                  {/* </div> */}
                   <div className='card-border'>
                   <h3 className='py-2 fs-6'>  {item.title} </h3>
                   <p className='desc-search'>{item.description}</p>

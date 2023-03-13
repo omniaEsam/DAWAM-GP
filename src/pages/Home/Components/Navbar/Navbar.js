@@ -5,9 +5,9 @@ import "./Navbar.css" ;
 export default function Navbar() {
     const items = links();
     const route = useLocation();
-  return (
+    return (
     <div>
-    <nav className="navbar navbar-expand-lg ">
+    <nav className="navbar navbar-expand-lg mt-2 ">
   <div className="container">
 <Link className="navbar-brand" to="#">دوام</Link>
 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,8 @@ export default function Navbar() {
         <li className="nav-item" key={index}>
         <Link  className="nav-link " aria-current="page" 
         style={{color:route.pathname===item.navLink ? `#D3A355` : `white` ,
-                borderBottom:route.pathname===item.navLink ? `2px solid white` : "" }}
+                borderBottom:route.pathname===item.navLink ? `2px solid white` : "" ,
+                borderRight: index===5 ?  `2px solid #D3A355` : ""}}
          to={item.navLink}>{item.navText}</Link>
         </li>
       )

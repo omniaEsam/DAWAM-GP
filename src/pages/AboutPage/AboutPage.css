@@ -1,7 +1,7 @@
-*{
+/* *{
    
     font-family: cursive;
-}
+} */
 :root{
     --black-color:#000000;
     --white-color:#FFFFFF;
@@ -23,7 +23,7 @@ ul{
 }
 
 #about{
-    background-image: url("../../shared/assests/images/Al-Azhar-Mosque-in-Cairo-Egypt-Map-facts-and-history-of-famous-Islamic-mosques-1140x530.jpg");
+    background-image: url("../../shared/assests/images/Al-Azhar-Mosque.jpg");
     background-position: center center;
     background-size: cover;
     height: 70vh;
