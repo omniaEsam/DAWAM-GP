@@ -6,7 +6,7 @@ function links(){
         }
         ,
         {
-            navLink: "About" ,
+            navLink: "/About" ,
             navText: "من نحن"
         }
         ,

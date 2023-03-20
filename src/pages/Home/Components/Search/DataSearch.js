@@ -1,8 +1,4 @@
 import searchImage1 from "../../../../shared/assests/images/search.jpg";
-import searchImage2 from "../../../../shared/assests/images/img.jpg";
-import searchImage3 from "../../../../shared/assests/images/Al-Azhar-Mosque.jpg";
-import searchImage4 from "../../../../shared/assests/images/banner-bgup.png";
-import searchImage5 from "../../../../shared/assests/images/counter-image.jpg";
 import searchImage6 from "../../../../shared/assests/images/header.jpg";
 
 export const dataSearchOne =[
@@ -15,21 +11,21 @@ export const dataSearchOne =[
     ,
     {
         id: 2,
-        image:searchImage2 ,
+        image:searchImage6 ,
         title:"جامع عمرو بن العاص",
         description:"بني  في مدينة الفسطاط التي أسسها المسلمون في مصر بعد فتحها. كان يسمى أيضا بمسجد الفتح والمسجد العتيق وتاج الجوامع"
     }
     ,
     {
         id: 3,
-        image:searchImage3 ,
+        image:searchImage1 ,
         title:"جامع عمرو بن العاص",
         description:"بني  في مدينة الفسطاط التي أسسها المسلمون في مصر بعد فتحها. كان يسمى أيضا بمسجد الفتح والمسجد العتيق وتاج الجوامع"
     }
     ,
     {
         id: 4,
-        image:searchImage4,
+        image:searchImage6,
         title:"جامع عمرو بن العاص",
         description:"بني  في مدينة الفسطاط التي أسسها المسلمون في مصر بعد فتحها. كان يسمى أيضا بمسجد الفتح والمسجد العتيق وتاج الجوامع"
     }
@@ -37,7 +33,7 @@ export const dataSearchOne =[
 export const dataSearchTwo =[
     {
         id: 5,
-        image:searchImage5,
+        image:searchImage1,
         title:"جامع عمرو بن العاص",
         description:"بني  في مدينة الفسطاط التي أسسها المسلمون في مصر بعد فتحها. كان يسمى أيضا بمسجد الفتح والمسجد العتيق وتاج الجوامع"
     }
@@ -58,7 +54,7 @@ export const dataSearchTwo =[
     ,
     {
         id: 8,
-        image:searchImage1 ,
+        image:searchImage6 ,
         title:"جامع عمرو بن العاص",
         description:"بني  في مدينة الفسطاط التي أسسها المسلمون في مصر بعد فتحها. كان يسمى أيضا بمسجد الفتح والمسجد العتيق وتاج الجوامع"
     }

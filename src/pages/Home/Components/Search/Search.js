@@ -6,7 +6,7 @@ import { dataSearchOne, dataSearchTwo } from './DataSearch'
 import "./Search.css"
 export default function Search() {
   return (
-    <div id='search ' className='my-5'>
+    <div id='search' className='my-5'>
       <div className='search-head text-center pb-5' >
         <h2 className='search-title'>تصفح الأوقاف</h2>
         <FontAwesomeIcon size='lg'  icon={faSearch} className="search-icon" />

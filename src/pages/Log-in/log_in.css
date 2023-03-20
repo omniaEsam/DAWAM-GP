@@ -1,0 +1,23 @@
+.form{
+    margin: 8rem 25rem;
+    border: 1px solid #005B4B;
+    padding: 4rem 3rem;
+}
+.icon{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #717578;
+    font-size: 1.5rem;
+}
+.anchor{
+    margin-top: 1.5rem;
+    margin-left: 9rem;
+    margin-bottom: 2rem;
+}
+.btn-green{
+    background-color: #005B4B !important;
+    border-color :  #005B4B;
+    color: white !important;
+    padding: .8rem  2rem !important; 
+    font-size: 1rem;
+}
