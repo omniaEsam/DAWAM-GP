@@ -14,3 +14,11 @@
 .count-num{
     color:#D3A355
 }
+.counter-p{
+    font-size: 1.7rem;
+}
+@media (max-width:991px){
+    .counter-p{
+        font-size: 1.3rem;
+    }
+}

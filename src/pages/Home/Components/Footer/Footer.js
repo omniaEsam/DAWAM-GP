@@ -13,7 +13,7 @@ import "./Footer.css";
 export default function Footer() {
   const items = links();
   return (
-    <div className="footer-section pt-5 pb-1">
+    <div className="footer-section pt-5 pb-1" id="contact">
       <div className="container">
         <div className="row">
           <div className="col-md-4 ">
@@ -66,7 +66,7 @@ export default function Footer() {
       <div className="line "></div>
       <div className="container">
           <div className="row">
-          <p className="text-white text-center " dir="ltr">
+          <p className="text-white text-center footer-p " dir="ltr">
               &copy; 2023,All Right Reserved By DawamBC | info@DawamBC.org
             </p>
           </div>

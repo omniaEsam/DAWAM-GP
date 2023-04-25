@@ -9,11 +9,11 @@ export default function Counter() {
   const [counterOn ,setCounterOn] = useState(false);
 
   return (
-    <div className='counter-image'>
-    <div className='overlay py-5 d-flex justify-content-center align-items-center'>
+    <div className='counter-image'id="Waqf">
+    <div className='overlay py-5 d-flex justify-content-center align-items-center '>
       <div className = "container">
         <div className='row'>
-            <div className='col-md-4'>
+            <div className='col-md-4 '>
            <div className='text-center counter-items  py-3'>
            <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-2' />
            <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
@@ -22,7 +22,7 @@ export default function Counter() {
             +
            </p>
            </ScrollTrigger>
-           <p className='text-white fs-3 '>عددالأوقاف في العالم</p>
+           <p className='text-white  counter-p  '>عددالأوقاف في العالم</p>
            </div>
             </div>
             <div className='col-md-4'>
@@ -34,7 +34,7 @@ export default function Counter() {
             +
            </p>
            </ScrollTrigger>
-           <p className='text-white fs-3 '>عددالأوقاف في العالم</p>
+           <p className='text-white counter-p '>عددالأوقاف في العالم</p>
            </div>
             </div>
             <div className='col-md-4'>
@@ -46,7 +46,7 @@ export default function Counter() {
             +
            </p>
            </ScrollTrigger>
-           <p className='text-white fs-3 '>عددالأوقاف في العالم</p>
+           <p className='text-white counter-p '>عددالأوقاف في العالم</p>
            </div>
             </div>
         </div>

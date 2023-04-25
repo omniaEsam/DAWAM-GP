@@ -6,22 +6,22 @@ function links(){
         }
         ,
         {
-            navLink: "/About" ,
+            navLink: "#About" ,
             navText: "من نحن"
         }
         ,
         {
-            navLink: "/Waqf" ,
+            navLink: "#Waqf" ,
             navText: "الأوقاف"
         }
         ,
         {
-            navLink: "/search" ,
+            navLink: "#search" ,
             navText: "البحث المتقدم"
         }
         ,
         {
-            navLink: "/contact" ,
+            navLink: "#contact" ,
             navText: "تواصل معنا"
         }
         ,

@@ -1,12 +1,13 @@
+:root{
+    --white-color:#FFFFFF;
+    --green-color:#005B4B;
+}
 .about-contant{
     padding: 5rem 0;
 }
 .description{
-    /* width: 80%; */
     font-size: 1.3rem;
-    /* padding-top: 2rem; */
-    /* text-align: center; */
-    /* padding: 3rem 5rem; */
+    text-align: justify;
 }
 .button{
     text-align: center;
@@ -16,8 +17,13 @@
    border-radius: .3rem;
 }
 .btn-green{
-    background-color: #005B4B !important;
-    border-color :  #005B4B;
-    color: white !important;
+    background-color:var( --green-color) !important;
+    border-color :  var( --green-color);
+    color: var(--white-color) !important;
     padding: .8rem  2rem !important; 
+}
+@media (max-width:991px) {
+    .description{
+        font-size: 1.2rem;
+    }
 }

@@ -3,5 +3,10 @@
     font-size: 1.3rem;
     margin-right: 3rem;
 }
-
-
+.navbar{
+    position: relative;
+    z-index: 1000;
+}
+.navbar-nav .nav-link.active{
+color: red !important
+}
