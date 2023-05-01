@@ -1,12 +1,27 @@
-
+:root{
+    --black-color:#000000;
+    --white-color:#FFFFFF;
+    --gold-color:#D3A355;
+    --green-color:#005B4B;
+    --red-color:#A30602;
+    --brown-color:#997023;
+    --gray-color:#717578;
+    --off-white:#FFEDCB;
+    --green2-color:#298F60;
+    --green3-color:#558D60;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
     font-size: 1.3rem;
     margin-right: 3rem;
+    color: var(--white-color);
+    margin-top: 0;
 }
 .navbar{
     position: relative;
     z-index: 1000;
 }
-.navbar-nav .nav-link.active{
-color: red !important
+@media (max-width:767px) {
+    .navbar{
+        background-color: var(--green-color);
+    }
 }

@@ -14,10 +14,10 @@ export default function Counter() {
       <div className = "container">
         <div className='row'>
             <div className='col-md-4 '>
-           <div className='text-center counter-items  py-3'>
-           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-2' />
+           <div className='text-center counter-items py-md-3 '>
+           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-sm-1 py-md-2 ' />
            <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-           <p className='py-2 fs-2 count-num'>
+           <p className='py-md-2  counter-p count-num'>
             {counterOn && <CountUp start={0} end={7000} duration={3} delay={0}/>} 
             +
            </p>
@@ -26,27 +26,27 @@ export default function Counter() {
            </div>
             </div>
             <div className='col-md-4'>
-           <div className='text-center counter-items  py-3'>
-           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-2' />
+           <div className='text-center counter-items  py-md-3  '>
+           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-sm-1 py-md-2 ' />
            <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-           <p className='py-2 fs-2 count-num'>
+           <p className='py-md-2  counter-p count-num'>
             {counterOn && <CountUp start={0} end={7000} duration={3} delay={0}/>} 
             +
            </p>
            </ScrollTrigger>
-           <p className='text-white counter-p '>عددالأوقاف في العالم</p>
+           <p className='text-white counter-p '>عددالأوقاف في مصر</p>
            </div>
             </div>
             <div className='col-md-4'>
-           <div className='text-center counter-items  py-3'>
-           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-2' />
+           <div className='text-center counter-items  py-md-3 '>
+           <FontAwesomeIcon icon={faEarthAmericas}  className='text-white fs-1 py-sm-1 py-md-2 ' />
            <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-           <p className='py-2 fs-2 count-num'>
+           <p className='py-md-2  counter-p count-num'>
             {counterOn && <CountUp start={0} end={7000} duration={3} delay={0}/>} 
             +
            </p>
            </ScrollTrigger>
-           <p className='text-white counter-p '>عددالأوقاف في العالم</p>
+           <p className='text-white counter-p '>عددالأوقاف في دوام</p>
            </div>
             </div>
         </div>

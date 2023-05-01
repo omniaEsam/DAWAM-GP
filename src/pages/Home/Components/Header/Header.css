@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
-
+    overflow: hidden;
 }
 .overlay{
     position: absolute;
@@ -60,4 +60,5 @@
         font-size: 2rem;
         padding-right: 1rem;
     }
+   
 }

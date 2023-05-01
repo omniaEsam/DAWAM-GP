@@ -1,3 +1,7 @@
+:root{
+    --green-color:#005B4B;
+    --whitesmoke-color:#e9ecef;
+}
 .search-head{
     position: relative;
 }
@@ -5,15 +9,15 @@
     position: absolute;
     top: 4.6rem;
     left: 21rem;
-    color: #005B4B;
+    color: var( --green-color);
 }
 
 .search-title{
-    color:#005B4B;
+    color:var( --green-color);
     font-weight: 400;
 }
 .card-border{
-    border: 1px solid  #e9ecef;
+    border: 1px solid  var( --whitesmoke-color);
     padding:0 1rem 2rem 1rem;
     
 }

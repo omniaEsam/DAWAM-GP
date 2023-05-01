@@ -6,7 +6,7 @@ import {
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import links from "../Navbar/Links";
 import "./Footer.css";
 
@@ -16,18 +16,18 @@ export default function Footer() {
     <div className="footer-section pt-5 pb-1" id="contact">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 ">
-            <div className="footer-contant mb-5  h-100">
+          <div className="col-md-4">
+            <div className="footer-contant mb-5  h-100 icon-div">
               <h2>منصة دوام</h2>
-              <div className="text-white fs-1 ">
+              <div className="text-white footer-icon ">
                 <FontAwesomeIcon icon={faFacebook} />
                 <FontAwesomeIcon icon={faTwitter} />
                 <FontAwesomeIcon icon={faDiscord} />
               </div>
             </div>
           </div>
-          <div className="col-md-4 ">
-            <div className="footer-contant   ">
+          <div className="col-md-4  footer-responsive">
+            <div className="footer-contant  ">
               <h2 className="me-4"> تصفح</h2>
               <ul className="navbar-nav   mb-lg-0">
                 {items.map((item, index) => {
@@ -37,7 +37,7 @@ export default function Footer() {
                         className="nav-link "
                         aria-current="page"
                         to={item.navLink}
-                      >
+                        smooth >
                         {item.navText}
                       </Link>
                     </li>
@@ -46,16 +46,20 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="col-md-4 ">
+          <div className="col-md-4  footer-responsive">
             <div className=" text-center"    dir="ltr" >
               <h2>تواصل معنا</h2>
               <div className="text-white ">
                 <div className="footer-contact d-flex align-items-center ">
-                 <div className="me-3"> <FontAwesomeIcon icon={faPhone} /></div>
+                 <div className="me-3">
+                   <FontAwesomeIcon icon={faPhone} />
+                   </div>
                   <span>+20 100 007 7777</span>
                 </div>
                 <div className="mt-3 footer-contact d-flex align-items-center">
-                   <div className="me-3"> <FontAwesomeIcon icon={faEnvelope} /></div>
+                   <div className="me-3"> 
+                   <FontAwesomeIcon icon={faEnvelope} />
+                   </div>
                   <span >DawamBc@Dawam.org</span>
                 </div>
               </div>

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import "./Search.css";
+import { Link } from 'react-router-dom';
 
 export default function Search() {
   const  [term , setTerm ] = useState('');
@@ -19,7 +20,7 @@ export default function Search() {
         srsearch: 'term'
        },
      });
-     setResult(respond.data)
+     setResult(respond.data);
    
     };
     if(term){
@@ -31,11 +32,11 @@ export default function Search() {
       return(
                 <div className='col-md-3' key={item.id}>
                 <div className='search-cards '>
-                  <img src={+item.imageUrl} className='w-100 ' alt=""/>
+                  <img src={"http://afdinc-001-site5.itempurl.com"+item.imageUrl} className='w-100 ' alt=""/>
                   <div className='card-border'>
                   <h3 className='py-2 fs-6'>  {item.waqfName} </h3>
                   <p className='desc-search'>{item.waqfDescription.split('').slice(0 , 105).join('')}</p>
-                  <button className='btn btn-lg btn-green w-100'>المزيد</button>
+                  <Link className="btn  btn-lg btn-green  w-100" to="/ResultSearch" role="button" >المزيد</Link>
                   </div>
                 </div>
               </div>

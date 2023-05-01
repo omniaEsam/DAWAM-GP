@@ -1,3 +1,6 @@
+:root{
+    --gold-color:#D3A355;
+}
 .counter-image{
     background-image: url("../../../../shared/assests/images/counter-image.jpg");
     height: 85vh  ;
@@ -8,11 +11,11 @@
     position: relative;
 }
 .counter-items{
-    border: 2px solid #D3A355;
+    border: 2px solid var( --gold-color);
     border-radius: 10px;
 }
 .count-num{
-    color:#D3A355
+    color:var( --gold-color);
 }
 .counter-p{
     font-size: 1.7rem;
@@ -20,5 +23,17 @@
 @media (max-width:991px){
     .counter-p{
         font-size: 1.3rem;
+    }
+}
+@media (max-width:767px){
+    .counter-image{
+        height:95vh  ;
+    }
+    .counter-p{
+        font-size: 1.22222rem;
+    }
+    .counter-items{
+        padding: .5rem 0;
+        margin: 1rem;
     }
 }
