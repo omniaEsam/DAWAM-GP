@@ -11,7 +11,7 @@ export default function Search() {
 
   useEffect(()=>{
     const search= async()=>{
-     const respond = await axios.get('http://afdinc-001-site5.itempurl.com/api/waqf',{
+     const respond = await axios.get('http://afdinc-001-site5.itempurl.com/api/waqf/',{
       params: {
         action:'query',
         list: 'search' ,
