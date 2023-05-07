@@ -1,6 +1,7 @@
 :root{
     --green-color:#005B4B;
     --whitesmoke-color:#e9ecef;
+    --gold-color:#D3A355;
 }
 .search-head{
     position: relative;
@@ -21,9 +22,16 @@
     padding:0 1rem 2rem 1rem;
     
 }
+.card-border h3{
+    font-weight: bold;
+}
 .search-cards img{
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+    max-height: 340px;
+}
+.search-cards {
+    margin-bottom: 2rem;
 }
 .desc-search{
     text-align: justify;

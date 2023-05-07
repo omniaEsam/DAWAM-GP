@@ -2,33 +2,26 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link} from 'react-router-dom';
 import "./Search.css";
-import { Link } from 'react-router-dom';
 
 export default function Search() {
-  const  [term , setTerm ] = useState('');
   const  [result , setResult ] = useState([]);
 
-  useEffect(()=>{
-    const search= async()=>{
-     const respond = await axios.get('http://afdinc-001-site5.itempurl.com/api/waqf/',{
-      params: {
-        action:'query',
-        list: 'search' ,
-        origin: '*' ,
-        format: 'json' ,
-        srsearch: 'term'
-       },
-     });
-     setResult(respond.data);
-   
-    };
-    if(term){
-      search();
-    }
-  },[term]);
 
-  const fetchResult = result.map((item)=>{
+   const search= async()=>{
+     const respond = await axios.get(`http://afdinc-001-site5.itempurl.com/api/waqf`);
+     setResult(respond.data);
+  
+   }
+  useEffect(()=>{
+   
+      search();
+  
+    
+  },[]);
+  const fetchResult = result.slice(0,4);
+  const cards = fetchResult.map((item)=>{
       return(
                 <div className='col-md-3' key={item.id}>
                 <div className='search-cards '>
@@ -36,8 +29,7 @@ export default function Search() {
                   <div className='card-border'>
                   <h3 className='py-2 fs-6'>  {item.waqfName} </h3>
                   <p className='desc-search'>{item.waqfDescription.split('').slice(0 , 105).join('')}</p>
-                  <Link className="btn  btn-lg btn-green  w-100" to="/ResultSearch" role="button" >المزيد</Link>
-                  </div>
+                  <Link className="btn btn-lg btn-green w-100" to={`/ResultSearch/${item.id}`} role="button">المزيد</Link>                  </div>
                 </div>
               </div>
       )
@@ -47,12 +39,11 @@ export default function Search() {
       <div className='search-head text-center pb-5' >
         <h2 className='search-title'>تصفح الأوقاف</h2>
         <FontAwesomeIcon size='lg'  icon={faSearch} className="search-icon" />
-        <input className='form-control  m-auto w-50 my-4 rounded-pill '
-        onChange={(e)=> setTerm(e.target.value)} value={term}/>
+        <input className='form-control  m-auto w-50 my-4 rounded-pill '/>
       </div>
       <div className='container'>
         <div className='row'>
-        {fetchResult}
+        {cards}
         </div>
       </div>
      

@@ -1,4 +1,12 @@
-.App {
+@font-face {
+  font-family: "Medium";   
+  src: local("ArabFONTS-LamaSans-Medium"),
+   url("./Fonsts/ArbFONTS-LamaSans-Medium.ttf") format("truetype");
+}
+.App{
+  font-family: "Medium";    
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +43,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

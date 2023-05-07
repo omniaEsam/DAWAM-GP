@@ -2,10 +2,12 @@ import React from "react";
 import banner from "../../shared/assests/images/banner-bgup.png";
 import AboutLogo from "../../shared/assests/images/About-logo.jpeg";
 import "./AboutPage.css";
+import Navbar from "../Home/Components/Navbar/Navbar";
 
 export default function AboutPage() {
   return (
     <div>
+      <Navbar/>
       <header id="about" className="py-5">
         <div className="about-layer d-flex justify-content-center align-items-center ">
           <h1 className="heading">من نحن</h1>
