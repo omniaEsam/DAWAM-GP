@@ -6,14 +6,15 @@ import {
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
 import links from "../Navbar/Links";
 import "./Footer.css";
 
 export default function Footer() {
   const items = links();
   return (
-    <div className="footer-section pt-5 pb-1" id="contact">
+    <div className="footer-section pt-5 pb-1">
       <div className="container">
         <div className="row">
           <div className="col-md-4">
@@ -37,7 +38,7 @@ export default function Footer() {
                         className="nav-link "
                         aria-current="page"
                         to={item.navLink}
-                        smooth >
+                         >
                         {item.navText}
                       </Link>
                     </li>

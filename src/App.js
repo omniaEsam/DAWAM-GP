@@ -5,11 +5,11 @@ import "./App.css";
 import "./Fonsts/ArbFONTS-LamaSans-Medium.ttf";
 import "./main.css";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import Search from "./pages/Home/Components/Search/Search";
 import Home from "./pages/Home/Home";
 import ResultSearch from './pages/ResultSearch/ResultSearch';
 import Waqfs from './pages/Waqfs/Waqfs';
 import ContactUs from './pages/ContactUs/ContactUs';
+import AdvancedSearch from './pages/AdvancedSearch/AdvancedSearch';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Routes>
         <Route path="/" element={ <Home/> } />
          <Route path="/AboutPage" element={ <AboutPage/> } /> 
-        <Route path="/search" element={ <Search/> } />
+        <Route path="/AdvancedSearch" element={ <AdvancedSearch/> } />
         <Route path="/waqfs" element={ <Waqfs/> } />
         <Route path="/contactUs" element={ <ContactUs/> } />
         <Route path="/ResultSearch/:id" element={ <ResultSearch/> } /> 

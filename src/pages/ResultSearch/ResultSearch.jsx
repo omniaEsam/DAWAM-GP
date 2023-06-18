@@ -18,13 +18,13 @@ export default function ResultSearch() {
     resultSearch(params.id);
   });
   return (
-    <div>
+    <div className='resultsearch-bg'>
        <Navbar/>
-      <div className="container">
-        <div className="row g-1 my-5">
-          
+     <div>
+     <div className="container">
+        <div className="row g-1 my-4">
             <h2 className="text-center mb-5 resultS-header"> {result.waqfName}</h2>
-            <div className=" col-md-6 offset-1 data">
+            <div className=" col-md-6 offset-1 data mt-5">
               <ul>
                 <li className="pb-2 fs-5">
                   <span className="fw-bold fs-4"> إسم الواقف: </span>
@@ -57,10 +57,9 @@ export default function ResultSearch() {
               </ul>
             </div>
             <div className=" col-md-5">
-              
                 <img
                   src={"http://afdinc-001-site5.itempurl.com" + result.imageUrl}
-                  className="img-fluid rounded"
+                  className="w-75 rounded"
                   alt=""
                 />
               
@@ -68,6 +67,7 @@ export default function ResultSearch() {
           </div>
         </div>
       </div>
+     </div>
     </div>
   );
 }

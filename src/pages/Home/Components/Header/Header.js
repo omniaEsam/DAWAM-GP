@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
   return (
-    <div className='bg'>
+    <div className='bg' id="header">
        <Navbar/>
       <div className='overlay d-flex align-items-center'>
       <div className='container '>

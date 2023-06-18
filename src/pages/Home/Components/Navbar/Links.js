@@ -8,33 +8,28 @@ function links(){
         ,
         {
             id: 1 ,
-            navLink: "#About" ,
+            navLink: "/AboutPage" ,
             navText: "من نحن"
         }
         ,
         {
             id: 2,
-            navLink: "#Waqf" ,
+            navLink: "/waqfs" ,
             navText: "الأوقاف"
         }
         ,
         {
             id: 3,
-            navLink: "#search" ,
+            navLink: "/AdvancedSearch" ,
             navText: "البحث المتقدم"
         }
         ,
         {
             id: 4,
-            navLink: "#contact" ,
+            navLink: "/contactUs" ,
             navText: "تواصل معنا"
         }
-        ,
-        {
-            id: 5,
-            navLink: "/LogIn" ,
-            navText: " تسجيل الدخول"
-        }
+       
     ]
 }
 export default links;
