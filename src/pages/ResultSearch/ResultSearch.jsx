@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import './ResultSearch.css' ;
 import Navbar from "../Home/Components/Navbar/Navbar";
+import { Link } from "react-router-dom";
 
 export default function ResultSearch() {
   const [result, setResult] = useState([]);
@@ -54,20 +55,21 @@ export default function ResultSearch() {
                   <span className="fw-bold fs-4">وصف الوقف :</span>
                   {result.waqfDescription}
                 </li>
+                <Link className="btn btn-lg btn-green" to={"http://afdinc-001-site5.itempurl.com/" + result.documentUrl}  role="button">عرض الوثيقة</Link>  
+                
               </ul>
-            </div>
+                 </div>
             <div className=" col-md-5">
                 <img
                   src={"http://afdinc-001-site5.itempurl.com" + result.imageUrl}
                   className="w-75 rounded"
                   alt=""
                 />
-              
-            
+          
           </div>
+        </div>
         </div>
       </div>
      </div>
-    </div>
   );
 }
