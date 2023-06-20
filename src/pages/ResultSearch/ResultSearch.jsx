@@ -55,7 +55,7 @@ export default function ResultSearch() {
                   <span className="fw-bold fs-4">وصف الوقف :</span>
                   {result.waqfDescription}
                 </li>
-                <Link className="btn btn-lg btn-green" to={"http://afdinc-001-site5.itempurl.com/" + result.documentUrl}  role="button">عرض الوثيقة</Link>  
+                <Link className="btn btn-lg btn-green mt-3" to={"http://afdinc-001-site5.itempurl.com/" + result.documentUrl} target="_blank"  role="button">عرض الوثيقة</Link>  
                 
               </ul>
                  </div>
