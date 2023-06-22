@@ -1,6 +1,7 @@
 import React from "react";
 import banner from "../../shared/assests/images/banner-bgup.png";
 import AboutLogo from "../../shared/assests/images/About-logo.jpeg";
+import About_header from "../../shared/assests/images/About-header.jpg";
 import "./AboutPage.css";
 import Navbar from "../Home/Components/Navbar/Navbar";
 
@@ -9,14 +10,15 @@ export default function AboutPage() {
     <div>
       <Navbar/>
       <header id="about" className="py-5">
-        <div className="about-layer d-flex justify-content-center align-items-center ">
-          <h1 className="heading">من نحن</h1>
+        <div className="about-layer d-flex flex-column justify-content-center p-5 ">
+          <h1 className="heading">دوام </h1>
+          <p className="text text-white"> منصة لحفظ الأوقاف باستخدام البلوكتشين لحفظها على الدوام بطريقة امنة بدون تغيير أو تحريف</p>
         </div>
       </header>
       <section className="wqf-history py-5">
         <div className="container">
           <div className="text-center">
-            <h2 className="heading"> الأوقاف</h2>
+            <h2 className="heading">  عن الأوقاف</h2>
             <p>
               عبر العهود الإسلامية أنشأت أوقاف خلدها التاريخ حققت مقاصدها عبر
               العصور وما خطه الرحالة وكاتبي السير أرشدنا إلى روائع لم تكن
@@ -29,7 +31,7 @@ export default function AboutPage() {
             <div className="col-sm-12 col-md-6 offset-1">
               <div>
                 <p>
-                  <h4>فالوقف هو:</h4>
+                  <h4 className="heading">فالوقف هو:</h4>
                   هو حبس الأصل، وتسبيل المنفعة فالعين الموقوفة تخرج من سوق
                   المعاملات وشرط الأصل أن يكون مما يمكن الانتفاع به .
                 </p>
@@ -114,6 +116,18 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="platform-Technology">
+        <div className="container">
+        <div className="text-center">
+            <h2 className="heading">  عن البلوكتشين</h2>
+          </div>
+          <div className="Technology-info">
+          <div className="row g-1 my-5">
+
+          </div>
           </div>
         </div>
       </section>

@@ -14,15 +14,19 @@
 .heading{
     color: var(--gold-color);
 }
+.text{
+    color: var(--white-color);
+    font-size: 2.9rem;
+}
 ul{
     list-style-type: none;
 }
 
 #about{
-    background-image: url("../../shared/assests/images/Al-Azhar-Mosque.jpg");
+    background-image: url("../../shared/assests/images/About-header.jpg");
     background-position: center center;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     position: relative;
 }
 #about .about-layer{

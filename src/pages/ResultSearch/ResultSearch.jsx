@@ -28,15 +28,15 @@ export default function ResultSearch() {
             <div className=" col-md-6 offset-1 data mt-5">
               <ul>
                 <li className="pb-2 fs-5">
-                  <span className="fw-bold fs-4"> إسم الواقف: </span>
+                  <span className="fw-bold fs-4"> اسم الواقف: </span>
                   {result.founderName}
                 </li>
                 <li className="pb-2 fs-5">
-                  <span className="fw-bold fs-4">تاريخ الوقف هجريا:</span>
+                  <span className="fw-bold fs-4">تاريخ الوقف هجرياً:</span>
                   {result.establishmentDateH}
                 </li>
                 <li className="pb-2 fs-5">
-                  <span className="fw-bold fs-4">تاريخ الوقف ميلاديا:</span>
+                  <span className="fw-bold fs-4">تاريخ الوقف ميلادياً:</span>
                   {result.establishmentDate}
                 </li>
                 <li className="pb-2 fs-5">

@@ -12,7 +12,7 @@ export default function Header() {
       <div className='overlay d-flex align-items-center'>
       <div className='container '>
         <h1 className='h-title'>دوام</h1>
-        <p className='text'>منصة لحفظ الحجج الوقفية بأستخدام تقنية البلوكتشين ضد تغير الظروف والأعوام</p>
+        <p className='text'>منصة لحفظ الحجج الوقفية باستخدام تقنية البلوكتشين ضد تغير الظروف والأعوام</p>
       </div>
       </div>
       <Link to=""><FontAwesomeIcon icon="fa-solid fa-down-long" /></Link>
