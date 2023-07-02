@@ -1,9 +1,13 @@
 import React from "react";
 import banner from "../../shared/assests/images/banner-bgup.png";
 import AboutLogo from "../../shared/assests/images/About-logo.jpeg";
-import About_header from "../../shared/assests/images/About-header.jpg";
+// import About_header from "../../shared/assests/images/About-header.jpg";
+// import blockchain from "../../shared/assests/images/images.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers, faFileContract, faInfinity } from '@fortawesome/free-solid-svg-icons';
 import "./AboutPage.css";
 import Navbar from "../Home/Components/Navbar/Navbar";
+import Footer from "../Home/Components/Footer/Footer";
 
 export default function AboutPage() {
   return (
@@ -11,8 +15,8 @@ export default function AboutPage() {
       <Navbar/>
       <header id="about" className="py-5">
         <div className="about-layer d-flex flex-column justify-content-center p-5 ">
-          <h1 className="heading">دوام </h1>
-          <p className="text text-white"> منصة لحفظ الأوقاف باستخدام البلوكتشين لحفظها على الدوام بطريقة امنة بدون تغيير أو تحريف</p>
+          <h1 className="heading">عن دوام </h1>
+          <p className="text text-white"> هو وسيلة لحفظ الأوقاف الموثقة بشكل غير قابل للتغيير أو التلف عبر مرور العصور بصورة لامركزية باستخدام تقنية البلوكتشين</p>
         </div>
       </header>
       <section className="wqf-history py-5">
@@ -121,16 +125,42 @@ export default function AboutPage() {
       </section>
       <section className="platform-Technology">
         <div className="container">
-        <div className="text-center">
+          <div className="text-center">
             <h2 className="heading">  عن البلوكتشين</h2>
+            <p>هي سلسلة البيانات الموزعة، والتي تختص بإدارة قائمة متزايدة ومستمرة من السجلات المسماة بالكتل، فهي عبارة عن سلاسل كتل يتبع بعضها بعضاً، إذ تحوي كل كتلة على طابع زمني ومرتبط بالكتلة السابقة </p>
           </div>
           <div className="Technology-info">
-          <div className="row g-1 my-5">
-
-          </div>
+            <div className="row  my-5">
+            <h2 className="heading text-center">  عناصر البلوكتشين</h2>
+              <div className=" col-md-4 my-5 bg-white border-1 shadow ">
+                <div className="tech-items text-center p-4 ">
+                <FontAwesomeIcon icon={faUsers} className="text-center fs-1 py-sm-1 py-md-2 techIcons"/>
+                <h2>موزعة</h2>
+                <p>يمكن لجميع المشاركين في الشبكة الوصول إلى دفتر الأستاذ الموزع وسجل المعاملات الثابت.</p>
+                </div>
+             
+              </div>
+              <div className=" col-md-4  my-5 bg-white border-1 shadow ">
+                <div className="tech-items text-center p-4 ">
+                <FontAwesomeIcon icon={faInfinity} className="text-center fs-1 py-sm-1 py-md-2 techIcons"/>
+                <h2>غير قابلة للتغيير</h2>
+                <p>لا يمكن لأي مشارك تغيير معاملة أو التلاعب بها بعد تسجيلها في دفتر الأستاذ المشترك</p>
+                </div>
+             
+              </div>
+              <div className=" col-md-4 my-5 bg-white border-1 shadow ">
+                <div className="tech-items text-center p-4 ">
+                <FontAwesomeIcon icon={faFileContract} className="text-center fs-1 py-sm-1 py-md-2 techIcons" />
+                <h2>العقود الذكية</h2>
+                <p>لتسريع المعاملات ، يتم تخزين مجموعة من القواعد - تسمى العقد الذكي - على البلوكتشين ويتم تنفيذها تلقائيًا.</p>
+                </div>
+             
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

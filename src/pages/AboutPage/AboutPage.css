@@ -11,7 +11,7 @@
     --green3-color:#558D60;
 }
 
-.heading{
+.heading, .techIcons{
     color: var(--gold-color);
 }
 .text{
@@ -26,7 +26,7 @@ ul{
     background-image: url("../../shared/assests/images/About-header.jpg");
     background-position: center center;
     background-size: cover;
-    height: 80vh;
+    height: 90vh;
     position: relative;
 }
 #about .about-layer{
