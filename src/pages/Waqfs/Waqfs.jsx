@@ -3,6 +3,7 @@ import Navbar from '../Home/Components/Navbar/Navbar'
 import axios from 'axios';
 import { Link} from 'react-router-dom';
 import './Waqfs.css'
+import Footer from '../Home/Components/Footer/Footer';
 export default function Waqfs(){
 
   const [result , setResult ] = useState([]);
@@ -40,6 +41,8 @@ export default function Waqfs(){
         {fetchResult}
         </div>
       </div>
+      <Footer/>
+
     </div>
   )
   }

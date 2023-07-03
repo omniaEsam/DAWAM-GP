@@ -1,6 +1,4 @@
-:root{
-    --gold-color:#D3A355;
-}
+
 .counter-image{
     background-image: url("../../../../shared/assests/images/counter-image.jpg");
     height: 85vh  ;

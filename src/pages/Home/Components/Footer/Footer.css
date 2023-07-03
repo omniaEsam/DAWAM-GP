@@ -1,9 +1,6 @@
-:root{
-    --gold-color:#D3A355;
-    --green-color:#005B4B;
-}
+
 .footer-section{
-    background-color: var( --green-color);
+    background-color:var(--green-color);
 }
 .footer-contant{
     border-left: 2px solid var( --gold-color);
