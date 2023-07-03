@@ -3,6 +3,7 @@ import Navbar from '../Home/Components/Navbar/Navbar'
 import axios from 'axios';
 import { Link} from 'react-router-dom';
 import './Waqfs.css'
+import Footer from '../Home/Components/Footer/Footer';
 export default function Waqfs(){
 
   const [result , setResult ] = useState([]);
@@ -18,10 +19,8 @@ export default function Waqfs(){
   const fetchResult = result.map((item)=>{
       return(
                 <div className='col-md-12' key={item.id}>
-                <div className='waqf-cards  mt-5 d-flex '>
-                  <div className='ms-4  w-25 '>
-                  <img src={"http://afdinc-001-site5.itempurl.com"+item.imageUrl} className='w-100 ' alt=""/>
-                  </div>
+                <div className='waqf-cards  mt-5 mb-5 d-flex  '>
+                  <img src={"http://afdinc-001-site5.itempurl.com"+item.imageUrl} className='w-25 ms-4 ' alt=""/>
                   <div className='ps-5' >
                   <h3 className='pt-4 pb-2 fs-5 fw-bold'>  {item.waqfName} </h3>
                   <p className='desc-search fs-5'>{item.waqfDescription.split('').slice(0 , 105).join('')}</p>
@@ -39,6 +38,8 @@ export default function Waqfs(){
         {fetchResult}
         </div>
       </div>
+      <Footer/>
+
     </div>
   )
   }

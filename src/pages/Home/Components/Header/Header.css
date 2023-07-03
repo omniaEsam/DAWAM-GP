@@ -1,7 +1,4 @@
-:root{
-    --white-color:#FFFFFF;
-    --gold-color:#D3A355;
-}
+
 .bg{
     background-image: url("../../../../shared/assests/images/header.jpg") ;
     height: 100vh  ;

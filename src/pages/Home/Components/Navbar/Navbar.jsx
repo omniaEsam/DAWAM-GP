@@ -1,5 +1,4 @@
 import { useLocation} from 'react-router-dom';
-// import { HashLink as Link } from 'react-router-hash-link';
 import "./Navbar.css" ;
 import { NavLink  } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -13,7 +12,7 @@ export default function Navbar() {
       setNavbg('transpernt');
     }
     else{
-      setNavbg('#005b4b');
+      setNavbg('#005B4B');
     }
   },[location.pathname])
     return (

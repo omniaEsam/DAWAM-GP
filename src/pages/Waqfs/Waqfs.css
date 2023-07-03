@@ -2,4 +2,9 @@
     border: 1px solid  var( --whitesmoke-color);
     align-items:start;
     width: 80%;
+    min-height: 100px;
+}
+.waqf-cards img{
+    max-height: 230px;
+    
 }

@@ -5,6 +5,7 @@ import './ContactUs.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import iconContant from './Icon'
 import { NavLink } from 'react-router-dom'
+import Footer from '../Home/Components/Footer/Footer'
 
 export default function ContactUs() {
   return (
@@ -39,6 +40,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
