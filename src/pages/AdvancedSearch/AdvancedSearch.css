@@ -1,0 +1,9 @@
+.search-head{
+    position: relative;
+}
+.advanced-search-icon{
+    position: absolute;
+    top: 5.5rem;
+    left: 23rem;
+    color: var( --green-color);
+}

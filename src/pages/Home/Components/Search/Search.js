@@ -29,12 +29,22 @@ export default function Search() {
               </div>
       )
   })
+  
+
+  
+
   return (
     <div id='search' className='my-5'>
       <div className='search-head text-center pb-5' >
         <h2 className='search-title'>تصفح الأوقاف</h2>
-        <FontAwesomeIcon size='lg'  icon={faSearch} className="search-icon" />
-        <input className='form-control  m-auto w-50 my-4 rounded-pill '/>
+       <form>
+       <Link to='/AdvancedSearch'><FontAwesomeIcon size='lg'  icon={faSearch} className="search-icon" /></Link>
+
+        <input className='form-control  m-auto w-50 my-4 rounded-pill ' />
+        {/* <button type='submit'>بحث</button> */}
+       </form>
+        
+       
       </div>
       <div className='container'>
         <div className='row'>
