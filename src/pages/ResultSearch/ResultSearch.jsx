@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import './ResultSearch.css' ;
+import "./ResultSearch.css";
 import Navbar from "../Home/Components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 
@@ -19,24 +19,27 @@ export default function ResultSearch() {
     resultSearch(params.id);
   });
   return (
-    <div className='resultsearch-bg'>
-       <Navbar/>
-     <div>
-     <div className="container">
-        <div className="row g-1 my-4">
-            <h2 className="text-center mb-5 resultS-header"> {result.waqfName}</h2>
+    <div className="resultsearch-bg">
+      <Navbar />
+      <div>
+        <div className="container">
+          <div className="row g-1 my-4">
+            <h2 className="text-center mb-5 resultS-header">
+              {" "}
+              {result.waqfName}
+            </h2>
             <div className=" col-md-6 offset-1 data mt-5">
               <ul>
                 <li className="pb-2 fs-5">
-                  <span className="fw-bold fs-4"> إسم الواقف: </span>
+                  <span className="fw-bold fs-4"> اسم الواقف: </span>
                   {result.founderName}
                 </li>
                 <li className="pb-2 fs-5">
-                  <span className="fw-bold fs-4">تاريخ الوقف هجريا:</span>
+                  <span className="fw-bold fs-4">تاريخ الوقف هجرياً:</span>
                   {result.establishmentDateH}
                 </li>
                 <li className="pb-2 fs-5">
-                  <span className="fw-bold fs-4">تاريخ الوقف ميلاديا:</span>
+                  <span className="fw-bold fs-4">تاريخ الوقف ميلادياً:</span>
                   {result.establishmentDate}
                 </li>
                 <li className="pb-2 fs-5">
@@ -55,21 +58,28 @@ export default function ResultSearch() {
                   <span className="fw-bold fs-4">وصف الوقف :</span>
                   {result.waqfDescription}
                 </li>
-                <Link className="btn btn-lg btn-green mt-3" to={"http://afdinc-001-site5.itempurl.com/" + result.documentUrl} target="_blank"  role="button">عرض الوثيقة</Link>  
-                
+                <Link
+                  className="btn btn-lg btn-green mt-3"
+                  to={
+                    "http://afdinc-001-site5.itempurl.com/" + result.documentUrl
+                  }
+                  target="_blank"
+                  role="button"
+                >
+                  عرض الوثيقة
+                </Link>
               </ul>
-                 </div>
+            </div>
             <div className=" col-md-5">
-                <img
-                  src={"http://afdinc-001-site5.itempurl.com" + result.imageUrl}
-                  className="w-75 rounded"
-                  alt=""
-                />
-          
+              <img
+                src={"http://afdinc-001-site5.itempurl.com" + result.imageUrl}
+                className="w-75 rounded"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-        </div>
       </div>
-     </div>
+    </div>
   );
 }

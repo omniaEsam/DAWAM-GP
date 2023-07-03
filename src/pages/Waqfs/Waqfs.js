@@ -1,10 +1,10 @@
-import React ,{ useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../Home/Components/Navbar/Navbar'
 import axios from 'axios';
 import { Link} from 'react-router-dom';
 import './Waqfs.css'
+export default function Waqfs(){
 
-export default function Waqfs() {
   const [result , setResult ] = useState([]);
   
    const search= async()=>{
@@ -30,16 +30,16 @@ export default function Waqfs() {
                 </div>
               </div>
       )
-  })
+      });
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className='container'>
         <div className='row'>
         {fetchResult}
-        
         </div>
       </div>
     </div>
   )
-}
+  }
+  
