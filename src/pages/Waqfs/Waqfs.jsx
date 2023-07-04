@@ -20,7 +20,7 @@ export default function Waqfs(){
       return(
         
                 <div className='col-md-12' key={item.id}>
-                <div className='waqf-cards mt-5 d-flex '>
+                <div className='waqf-cards mt-5 d-flex rounded shadow '>
                   <div className='ms-4  w-25 '>
                   <img src={"http://afdinc-001-site5.itempurl.com"+item.imageUrl} className='w-100 ' alt=""/>
                   </div>
@@ -37,7 +37,7 @@ export default function Waqfs(){
     <div>
       <Navbar />
       <div className='container'>
-        <div className='row'>
+        <div className='row my-5'>
         {fetchResult}
         </div>
       </div>

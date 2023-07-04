@@ -1,14 +1,19 @@
 import React from "react";
 import banner from "../../shared/assests/images/banner-bgup.png";
 import AboutLogo from "../../shared/assests/images/About-logo.jpeg";
-// import About_header from "../../shared/assests/images/About-header.jpg";
-// import blockchain from "../../shared/assests/images/images.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
   faFileContract,
   faInfinity,
-  faCubes,  faNetworkWired
+  faCubes,
+  faNetworkWired,
+  faUserCheck,
+  faShieldHalved,
+  faClockRotateLeft,
+  faMagnifyingGlass,
+  faPlus,
+  faDisplay
 } from "@fortawesome/free-solid-svg-icons";
 import "./AboutPage.css";
 import Navbar from "../Home/Components/Navbar/Navbar";
@@ -87,48 +92,11 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      {/* --------------------------About DAWAM------------------------------ */}
-      <section className="wqf-platform py-5">
-        <div className="container">
-          <div className="text-center">
-            <h2 className="heading"> منصة دوام</h2>
-          </div>
-          <div className="dawam-info">
-            <div className="row g-1 my-5">
-              <div className="col-sm-12 col-md-5 offset-1">
-                <div className="dawam-img">
-                  <img src={AboutLogo} className="img-fluid rounded" alt="" />
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-6 d-flex align-items-center ">
-                <div className="dawam-content text-center">
-                  <p>
-                    يوجد الان بوزارة الأوقاف <b>150000</b> حجة وقف بأرشيف
-                    الوزارة تحت حماية أمنية يصعب الاطلاع عليها وقابلة للتلف
-                  </p>
-                  <p>
-                    وهنا يأتي دور منصة دوام لحماية هذه الحجج (الوثائق) حتى لا
-                    تؤول مآل اخواتها المفقودة جراء تغيير الظروف
-                  </p>
-                  <p>
-                    حيث يتم في دوام تخليد الأوقاف وحفظها للأبد على شبكة Ethereum
-                    القائمة على تقنية ال Blocchain.
-                  </p>
-                  <p>
-                    وذلك من خلال استخدام العقود الذكية و الرموز غير قابلة
-                    للاستبدال (NFTs) لتشفير الحجج الوقفية وبالتالي ضمان حماية
-                    الأوقاف من التغيير أو التلف أو الفقد.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <hr />
         </div>
       </section>
       {/* --------------------------About Blockchain Key elements----------------------------- */}
-      <section className="platform-Technology">
+      <section className="platform-Technology py-5">
         <div className="container">
           <div className="text-center">
             <h2 className="heading"> عن البلوكتشين</h2>
@@ -141,11 +109,11 @@ export default function AboutPage() {
           <div className="Technology-info">
             <div className="row  my-5">
               <h2 className="heading text-center"> عناصر البلوكتشين</h2>
-              <div className=" col-md-4 my-5 bg-white border-1 shadow ">
+              <div className=" col-md-4 tech-items my-5 bg-white border-1 shadow ">
                 <div className="tech-items text-center p-4 ">
                   <FontAwesomeIcon
                     icon={faUsers}
-                    className="text-center fs-1 py-sm-1 py-md-2 techIcons"
+                    className=" fs-1 py-sm-1 py-md-2 techIcons"
                   />
                   <h2>موزعة</h2>
                   <p>
@@ -154,11 +122,11 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className=" col-md-4  my-5 bg-white border-1 shadow ">
+              <div className=" col-md-4 tech-items my-5 bg-white border-1 shadow ">
                 <div className="tech-items text-center p-4 ">
                   <FontAwesomeIcon
                     icon={faInfinity}
-                    className="text-center fs-1 py-sm-1 py-md-2 techIcons"
+                    className="fs-1 py-sm-1 py-md-2 techIcons"
                   />
                   <h2>غير قابلة للتغيير</h2>
                   <p>
@@ -167,11 +135,11 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-              <div className=" col-md-4 my-5 bg-white border-1 shadow ">
+              <div className=" col-md-4 tech-items my-5 bg-white border-1 shadow ">
                 <div className="tech-items text-center p-4 ">
                   <FontAwesomeIcon
                     icon={faFileContract}
-                    className="text-center fs-1 py-sm-1 py-md-2 techIcons"
+                    className="fs-1 py-sm-1 py-md-2 techIcons"
                   />
                   <h2>العقود الذكية</h2>
                   <p>
@@ -182,102 +150,223 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+          <hr />
         </div>
       </section>
       {/* --------------------------About How blockchain works----------------------------- */}
-      <section className="platform-Technology">
+      <section className="platform-Technology py-5">
         <div className="container">
           <div className="Technology-info">
-          <h2 className="heading"> طريقة عمل البلوكتشين</h2>
+            <h2 className="heading"> طريقة عمل البلوكتشين</h2>
             <div className="row  my-5 bg-white border-1 shadow">
-              
               <div className="col-md-2">
-              <div className="tech-items p-4 ">
+                <div className=" p-4 ">
                   <FontAwesomeIcon
                     icon={faFileContract}
                     className=" fs-1 py-sm-1 py-md-2 techIcons"
                   />
-                 
                 </div>
               </div>
               <div className="col-md-10">
-              <div className="tech-items p-4 ">
-              <h3>عند حدوث كل معاملة ، يتم تسجيلها على أنها "كتلة" من البيانات</h3>
+                <div className=" p-4 ">
+                  <h3>
+                    عند حدوث كل معاملة ، يتم تسجيلها على أنها "كتلة" من البيانات
+                  </h3>
                   <p>
-                  تُظهر هذه المعاملات حركة الأصل الذي يمكن أن يكون ملموسًا (منتج) أو غير ملموس (فكري). يمكن أن تسجل كتلة البيانات المعلومات التي تختارها: من وماذا ومتى وأين وكم وحتى الحالة - مثل درجة حرارة شحنة الطعام.
+                    تُظهر هذه المعاملات حركة الأصل الذي يمكن أن يكون ملموسًا
+                    (منتج) أو غير ملموس (فكري). يمكن أن تسجل كتلة البيانات
+                    المعلومات التي تختارها: من وماذا ومتى وأين وكم وحتى الحالة -
+                    مثل درجة حرارة شحنة الطعام.
                   </p>
-              </div>
-              
+                </div>
               </div>
             </div>
-            
+
             <div className="row  my-5 bg-white border-1 shadow">
-              
               <div className="col-md-2">
-              <div className="tech-items p-4 ">
-              <FontAwesomeIcon icon={faCubes} className=" fs-1 py-sm-1 py-md-2 techIcons"/>
-                 
+                <div className=" p-4 ">
+                  <FontAwesomeIcon
+                    icon={faCubes}
+                    className=" fs-1 py-sm-1 py-md-2 techIcons"
+                  />
                 </div>
               </div>
               <div className="col-md-10">
-              <div className="tech-items p-4 ">
-              <h3>كل كتلة متصلة بتلك التي قبلها وبعدها</h3>
+                <div className=" p-4 ">
+                  <h3>كل كتلة متصلة بتلك التي قبلها وبعدها</h3>
                   <p>
-                  تشكل هذه الكتل سلسلة من البيانات عندما ينتقل الأصل من مكان إلى آخر أو تتغير الملكية. تؤكد الكتل الوقت الدقيق وتسلسل المعاملات ، وترتبط الكتل معًا بشكل آمن لمنع أي كتلة من التغيير أو إدراج كتلة بين كتلتين موجودتين. 
+                    تشكل هذه الكتل سلسلة من البيانات عندما ينتقل الأصل من مكان
+                    إلى آخر أو تتغير الملكية. تؤكد الكتل الوقت الدقيق وتسلسل
+                    المعاملات ، وترتبط الكتل معًا بشكل آمن لمنع أي كتلة من
+                    التغيير أو إدراج كتلة بين كتلتين موجودتين.
                   </p>
-              </div>
-              
+                </div>
               </div>
             </div>
             <div className="row  my-5 bg-white border-1 shadow">
-              
               <div className="col-md-2">
-              <div className="tech-items p-4 ">
-              <FontAwesomeIcon icon={faNetworkWired} className=" fs-1 py-sm-1 py-md-2 techIcons"/>
-                 
+                <div className=" p-4 ">
+                  <FontAwesomeIcon
+                    icon={faNetworkWired}
+                    className=" fs-1 py-sm-1 py-md-2 techIcons"
+                  />
                 </div>
               </div>
               <div className="col-md-10">
-              <div className="tech-items p-4 ">
-              <h3>يتم تجميع المعاملات معًا في سلسلة لا رجعة فيها</h3>
+                <div className=" p-4 ">
+                  <h3>يتم تجميع المعاملات معًا في سلسلة لا رجعة فيها</h3>
                   <p>
-                  تعمل كل كتلة إضافية على تعزيز التحقق من الكتلة السابقة وبالتالي البلوكتشين بالكامل. هذا يجعل البلوكتشين واضحًا إذا تم التلاعب به ، مما يوفر القوة الرئيسية في إنه غير قابل للتغيير. هذا يزيل إمكانية العبث من قبل الفاعل الضار - ويبني دفتر أستاذ للمعاملات التي يمكنك الوثوق بها أنت وأعضاء الشبكة الآخرين.
+                    تعمل كل كتلة إضافية على تعزيز التحقق من الكتلة السابقة
+                    وبالتالي البلوكتشين بالكامل. هذا يجعل البلوكتشين واضحًا إذا
+                    تم التلاعب به ، مما يوفر القوة الرئيسية في إنه غير قابل
+                    للتغيير. هذا يزيل إمكانية العبث من قبل الفاعل الضار - ويبني
+                    دفتر أستاذ للمعاملات التي يمكنك الوثوق بها أنت وأعضاء الشبكة
+                    الآخرين.
                   </p>
-              </div>
-              
+                </div>
               </div>
             </div>
           </div>
+          <hr />
         </div>
       </section>
       {/* --------------------------About Benefits of blockchain----------------------------- */}
-      <section className="platform-Technology">
+
+      <section className="platform-Technology py-5">
         <div className="container">
           <div className="Technology-info">
-          <h2 className="heading"> طريقة عمل البلوكتشين</h2>
+            <h2 className="heading"> فوائد البلوكتشين</h2>
+            <p>
+              غالبًا ما تضيع العمليات جهدًا في حفظ السجلات المكررة وعمليات
+              التحقق من صحة الطرف الثالث. يمكن أن تكون أنظمة حفظ السجلات عرضة
+              للاحتيال والهجمات الإلكترونية. الشفافية المحدودة يمكن أن تبطئ
+              التحقق من البيانات. ومع وصول إنترنت الأشياء ، ازداد حجم المعاملات
+              بشكل كبير. كل هذا يؤدي إلى إبطاء العمل ، واستنزاف المحصلة النهائية
+              - ويعني أننا بحاجة إلى طريقة أفضل.
+            </p>
             <div className="row  my-5 bg-white border-1 shadow">
-              
               <div className="col-md-2">
-              <div className="tech-items p-4 ">
+                <div className=" p-4 ">
                   <FontAwesomeIcon
-                    icon={faFileContract}
+                    icon={faUserCheck}
                     className=" fs-1 py-sm-1 py-md-2 techIcons"
                   />
-                 
                 </div>
               </div>
               <div className="col-md-10">
-              <div className="tech-items p-4 ">
-              <h3>عند حدوث كل معاملة ، يتم تسجيلها على أنها "كتلة" من البيانات</h3>
+                <div className=" p-4 ">
+                  <h3>ثقة أكبر</h3>
                   <p>
-                  تُظهر هذه المعاملات حركة الأصل الذي يمكن أن يكون ملموسًا (منتج) أو غير ملموس (فكري). يمكن أن تسجل كتلة البيانات المعلومات التي تختارها: من وماذا ومتى وأين وكم وحتى الحالة - مثل درجة حرارة شحنة الطعام.
+                    مع البلوكتشين ، بصفتك عضوًا في شبكة للأعضاء فقط ، يمكنك أن
+                    تطمئن إلى أنك تتلقى بيانات دقيقة وفي الوقت المناسب ، وأن
+                    سجلات البلوكتشين السرية الخاصة بك ستتم مشاركتها فقط مع أعضاء
+                    الشبكة الذين منحتهم حق الوصول على وجه التحديد.
                   </p>
-              </div>
-              
+                </div>
               </div>
             </div>
-            
 
+            <div className="row  my-5 bg-white border-1 shadow">
+              <div className="col-md-2">
+                <div className=" p-4 ">
+                  <FontAwesomeIcon
+                    icon={faShieldHalved}
+                    className=" fs-1 py-sm-1 py-md-2 techIcons"
+                  />
+                </div>
+              </div>
+              <div className="col-md-10">
+                <div className=" p-4 ">
+                  <h3>قدر أكبر من الأمن</h3>
+                  <p>
+                    إجماع على دقة البيانات مطلوب من جميع أعضاء الشبكة ، وجميع
+                    المعاملات التي تم التحقق من صحتها غير قابلة للتغيير لأنه يتم
+                    تسجيلها بشكل دائم. لا أحد ، ولا حتى مسؤول النظام ، يمكنه حذف
+                    معاملة.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="row  my-5 bg-white border-1 shadow">
+              <div className="col-md-2">
+                <div className=" p-4 ">
+                  <FontAwesomeIcon
+                    icon={faClockRotateLeft}
+                    className=" fs-1 py-sm-1 py-md-2 techIcons"
+                  />
+                </div>
+              </div>
+              <div className="col-md-10">
+                <div className=" p-4 ">
+                  <h3>المزيد من الكفاءة</h3>
+                  <p>
+                    باستخدام دفتر الأستاذ الموزع الذي يتم مشاركته بين أعضاء
+                    الشبكة ، يتم التخلص من تسويات السجلات التي تهدر الوقت.
+                    ولتسريع المعاملات ، يمكن تخزين مجموعة من القواعد - تسمى
+                    العقد الذكي - على البلوكتشين وتنفيذها تلقائيًا.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </section>
+      {/* --------------------------About DAWAM---------------------------- */}
+      <section className="platform-Technology py-5">
+        <div className="container">
+          <div className="text-center">
+            <h2 className="heading"> ما تقدمه دوام</h2>
+            <div className="dawam-content">
+                  <p>
+                    يوجد الان بوزارة الأوقاف <b>150000</b> حجة وقف بأرشيف
+                    الوزارة تحت حماية أمنية يصعب الاطلاع عليها وقابلة للتلف
+                  
+                    وهنا يأتي دور منصة دوام لحماية هذه الحجج (الوثائق) حتى لا
+                    تؤول مآل اخواتها المفقودة جراء تغيير الظروف
+                  
+                    حيث يتم في دوام تخليد الأوقاف وحفظها للأبد على شبكة Ethereum
+                    القائمة على تقنية ال Blocchain.
+                  
+                    وذلك من خلال استخدام العقود الذكية و الرموز غير قابلة
+                    للاستبدال (NFTs) لتشفير الحجج الوقفية وبالتالي ضمان حماية
+                    الأوقاف من التغيير أو التلف أو الفقد.
+                  </p>
+                </div>
+          </div>
+          <div className="Technology-info">
+            <div className="row  my-5">
+              {/* <h2 className="heading text-center"> عناصر البلوكتشين</h2> */}
+              <div className=" col-md-4 tech-items my-5 bg-white border-1 shadow ">
+                <div className="tech-items text-center p-4 ">
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="text-center fs-1 py-sm-1 py-md-2 techIcons" />
+                 
+                  <h2>تصفح الاوقاف</h2>
+                  <p>
+                    تتيح لك منصة دوام البحث عن مجموعة من الاوقاف المسجلة
+                  </p>
+                </div>
+              </div>
+              <div className=" col-md-4 tech-items  my-5 bg-white border-1 shadow ">
+                <div className="tech-items text-center p-4 ">
+                <FontAwesomeIcon icon={faPlus} className="text-center fs-1 py-sm-1 py-md-2 techIcons" />
+                  <h2>إضافة وقف</h2>
+                  <p>
+                    من خلال منصة دوام يمكنك إضافة وقف جديد 
+                  </p>
+                </div>
+              </div>
+              <div className=" col-md-4 tech-items my-5 bg-white border-1 shadow ">
+                <div className="tech-items text-center p-4 ">
+                <FontAwesomeIcon icon={faDisplay} className="text-center fs-1 py-sm-1 py-md-2 techIcons" />
+
+                  <h2>عرض الأوقاف</h2>
+                  <p>
+                    تتيح لك منصة دوام عرض مجموعة من الأوقاف المسجلة                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
