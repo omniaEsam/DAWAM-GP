@@ -18,10 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutPage" element={<AboutPage />} />
-          <Route path="/AdvancedSearch" element={<AdvancedSearch />} />
+          <Route path="/AdvancedSearch/:searchQuerys" element={<AdvancedSearch />} />
           <Route path="/waqfs" element={<Waqfs />} />
           <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/ResultSearch/:id" element={<ResultSearch />} />
+          <Route path="/ResultSearch/:id" element={<ResultSearch/>} />
         </Routes>
       </BrowserRouter>
     </div>

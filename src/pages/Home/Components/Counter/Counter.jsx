@@ -18,11 +18,11 @@ export default function Counter() {
                 <FontAwesomeIcon icon={faEarthAmericas} className='text-white fs-1 py-sm-1 py-md-2 ' />
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                   <p className='py-md-2  counter-p count-num'>
-                    {counterOn && <CountUp start={0} end={7000} duration={3} delay={0} />}
+                    {counterOn && <CountUp start={0} end={150000} duration={3} delay={0} />}
                     +
                   </p>
                 </ScrollTrigger>
-                <p className='text-white  counter-p  '>عددالأوقاف في العالم</p>
+                <p className='text-white  counter-p  '>عددالأوقاف في مصر</p>
               </div>
             </div>
             <div className='col-md-4'>
@@ -30,11 +30,11 @@ export default function Counter() {
                 <FontAwesomeIcon icon={faEarthAmericas} className='text-white fs-1 py-sm-1 py-md-2 ' />
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                   <p className='py-md-2  counter-p count-num'>
-                    {counterOn && <CountUp start={0} end={7000} duration={3} delay={0} />}
+                    {counterOn && <CountUp start={0} end={16000} duration={3} delay={0} />}
                     +
                   </p>
                 </ScrollTrigger>
-                <p className='text-white counter-p '>عددالأوقاف في مصر</p>
+                <p className='text-white counter-p '>عددالأوقاف التابعة للأزهر </p>
               </div>
             </div>
             <div className='col-md-4'>
@@ -42,7 +42,7 @@ export default function Counter() {
                 <FontAwesomeIcon icon={faEarthAmericas} className='text-white fs-1 py-sm-1 py-md-2 ' />
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
                   <p className='py-md-2  counter-p count-num'>
-                    {counterOn && <CountUp start={0} end={7000} duration={3} delay={0} />}
+                    {counterOn && <CountUp start={0} end={13} duration={3} delay={0} />}
                     +
                   </p>
                 </ScrollTrigger>

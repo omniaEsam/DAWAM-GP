@@ -3,9 +3,9 @@ import Navbar from '../Home/Components/Navbar/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './AdvancedSearch.css'
-// import '../Waqfs/Waqfs.css'
+
 export default function AdvancedSearch() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -17,6 +17,7 @@ export default function AdvancedSearch() {
  useEffect(()=>{
      search();
  },[searchQuery]);
+
  const fetchResult = searchResults.map((item)=>{
   return(
     <div className='col-md-12' key={item.id}>
@@ -31,8 +32,20 @@ export default function AdvancedSearch() {
       </div>
     </div>
   </div>
+ 
   )
 })
+
+const { searchQuerys } =useParams();
+const [searchResultsPage, setSearchResultsPage] = useState([]);
+
+useEffect(() => {
+  const fetchSearchResults = async () => {
+    const response = await axios.get(`http://afdinc-001-site5.itempurl.com/api/waqf/Search/${searchQuerys}`);
+    setSearchResultsPage(response.data);
+  };
+  fetchSearchResults();
+}, [searchQuerys]);
 
 
   return (
@@ -48,9 +61,24 @@ export default function AdvancedSearch() {
     <div className='container'>
         <div className='row'>
         {fetchResult}
+        {searchResultsPage.map((item) => (
+         <div className='col-md-12' key={item.id}>
+         <div className='waqf-cards  mt-4 d-flex rounded shadow '>
+           <div className='ms-4 w-25'>
+           <img src={"http://afdinc-001-site5.itempurl.com"+item.imageUrl} className='w-100 ' alt=""/>
+           </div>
+           <div className='ps-5' >
+           <h3 className='pt-4 pb-2 fs-5 fw-bold'>  {item.waqfName} </h3>
+           <p className='desc-search fs-5'>{item.waqfDescription.split('').slice(0 , 105).join('')}</p>
+           <Link className="btn btn-green m-3" to={`/ResultSearch/${item.id}`} role="button">المزيد</Link>              
+           </div>
+         </div>
+       </div>
+      ))}
+        </div>
         </div>
       </div>
-      </div>
+      
     
    
   )
