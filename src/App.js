@@ -2,8 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import "./Fonsts/ArbFONTS-LamaSans-Medium.ttf";
-import "./main.css";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import Home from "./pages/Home/Home";
 import ResultSearch from './pages/ResultSearch/ResultSearch';

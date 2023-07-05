@@ -24,10 +24,10 @@ ul{
     left: 0;
     background-color: rgba(0, 91, 75, 0.5);
 }
-#about  h1{
+/* #about  h1{
     
     font-size: 75px;
-}
+} */
 .tech-items{
     transition: all .5s !important;
 }

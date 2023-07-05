@@ -17,16 +17,9 @@
     background-color: rgb(0, 91, 75 ,0.501961); 
     z-index: 99;
 }
-.h-title{
-    color: var(--gold-color);
-    font-size: 3.5rem;
-    margin-top: 8rem;
 
-}
 .text{
     width: 53%;
-    font-size: 2.9rem;
-    color: var(--white-color);
      padding-right: 1rem;
 }
 @media (max-width:1200px){
