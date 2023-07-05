@@ -3,6 +3,8 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link} from 'react-router-dom';
 import "./Search.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 export default function Search() {
   const [result, setResult] = useState([]);
@@ -53,14 +55,19 @@ export default function Search() {
     <div id="search" className="my-5">
       <div className="search-head text-center pb-5">
         <h2 className="search-title">تصفح الأوقاف</h2>
-        <form>
+        <form > 
           <input
             className="form-control  m-auto w-50 my-4 rounded-pill "
             value={searchQuerys}
             onChange={(e) => setSearchQuerys(e.target.value)}
           />
           <Link to={`/AdvancedSearch/${searchQuerys}`}>
-            <button onClick={handleSearch}>Search</button>
+          <FontAwesomeIcon
+            size="lg"
+            icon={faSearch}
+            className="search-icon"
+            onClick={handleSearch}
+          />
           </Link>
         </form>
       </div>
