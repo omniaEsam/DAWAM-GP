@@ -1,1 +1,53 @@
 
+@font-face {
+    font-family: Medium;   
+    src: local("ArabFONTS-LamaSans-Medium"),
+     url("./Fonts/ArbFONTS-LamaSans-Medium.ttf");
+  }
+  :root{
+    --black-color:#000000;
+    --white-color:#FFFFFF;
+    --gold-color:#D3A355;
+    --green-color:#005B4B;
+    --red-color:#A30602;
+    --brown-color:#997023;
+    --gray-color:#717578;
+    --off-white:#FFEDCB;
+    --green2-color:#298F60;
+    --green3-color:#558D60;
+  
+    --darkgray-color:#454C52;
+    --grayTwo-color:#D9D9D9;
+    --whitesmoke-color:#e9ecef;
+    --font-family:Medium
+  }
+  body{
+    font-family: var(--font-family) !important;
+  }
+  .cursor-pointer{
+    cursor: pointer;
+  }
+
+
+  .btn{
+    transition: all .5s !important;
+  }
+  
+  .btn:hover{
+    background-color: #fff !important;
+    color: var(--gold-color) !important;
+    border-color: var(--gold-color) !important;
+  }
+  .title{
+    color: var(--gold-color);
+    font-size: 3.5rem;
+    margin-top: 8rem;
+
+}
+.text{
+    color: var(--white-color);
+    font-size: 2.9rem;
+}
+  ul{
+    list-style-type: none;
+  }

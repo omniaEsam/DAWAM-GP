@@ -26,7 +26,7 @@ export default function AboutPage() {
       {/* --------------------------About Header ------------------------------ */}
       <header id="about" className="py-5">
         <div className="about-layer d-flex flex-column justify-content-center p-5 ">
-          <h1 className="heading">عن دوام </h1>
+          <h1 className="title">عن دوام </h1>
           <p className="text text-white">
             {" "}
             هو وسيلة لحفظ الأوقاف الموثقة بشكل غير قابل للتغيير أو التلف عبر
