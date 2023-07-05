@@ -1,6 +1,5 @@
 import React from "react";
 import banner from "../../shared/assests/images/banner-bgup.png";
-import AboutLogo from "../../shared/assests/images/About-logo.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUsers,
